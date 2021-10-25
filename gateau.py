@@ -36,7 +36,7 @@ for i in range(0, age):
   nbEspacesTotal = nbEspacesTotal + 3
 
 # Vérification du nombre de lettres dans le nom en utlisant la fonction "len()".
-# Deplus, utilisation de l'opérateur modulo (%) pour déterminer si il s'agit d'un nombre pair ou impair.
+# De plus, utilisation de l'opérateur modulo (%) pour déterminer si il s'agit d'un nombre pair ou impair.
 # Si il y a un nombre impair de lettres, on ajoute un espace à la fin.
 # Ceci va simplifier le centrage du nom sur le gâteau.
 if (len(nom) % 2 != 0):
