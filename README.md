@@ -6,4 +6,4 @@
 
 **2. phrases.py** : Génère des phrases comiques en utilisant des mots au hasard
 
-**3. objet.py** : Introduction à la programmation orientée objet en utilisant des animaux
+**3. objet.py** et **nature.py** : Introduction à la programmation orientée objet en utilisant des animaux
