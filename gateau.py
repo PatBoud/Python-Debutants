@@ -26,21 +26,27 @@ dessous = ""
 nbEspacesTotal = 0
 
 
-# Une boucle est utilisée pour que le gâteau ait autant de bougies que l'âge entré.
-# La variable "i" est temporairement utilisée comme compteur.
-for i in range(0, age):
-  bougies = bougies + "i  "
-  espaces = espaces + "   "
-  dessus = dessus + "---"
-  dessous = dessous + "___"
-  nbEspacesTotal = nbEspacesTotal + 3
-
-# Vérification du nombre de lettres dans le nom en utlisant la fonction "len()".
+# Vérification du nombre de lettres dans le nom saisi en utlisant la fonction "len()".
 # De plus, utilisation de l'opérateur modulo (%) pour déterminer si il s'agit d'un nombre pair ou impair.
 # Si il y a un nombre impair de lettres, on ajoute un espace à la fin.
 # Ceci va simplifier le centrage du nom sur le gâteau.
 if (len(nom) % 2 != 0):
   nom = nom + " "
+
+
+
+
+# Une boucle est utilisée pour:
+#   - ajouter des bougies en fonction de l'âge entré
+#   - calculer la largeur totale du gâteau (en espaces)
+# La lettre "i" représentera chaque bougie sur le gâteau.
+# La variable "x" est temporairement utilisée comme compteur.
+for x in range(0, age):
+  bougies = bougies + "i  "
+  espaces = espaces + "   "
+  dessus = dessus + "---"
+  dessous = dessous + "___"
+  nbEspacesTotal = nbEspacesTotal + 3
 
 
 # Vérification du nombre d'espaces total pour déterminer si il est pair ou impair.
@@ -55,7 +61,7 @@ else:
 # pour centrer le nom sur le gâteau.
 nbEspacesNom = int((nbEspacesTotal - len(nom)) / 2)
 
-# Une autre boucle est utilisée pour créer ces espaces.
+# Une autre boucle est utilisée pour ajouter ces espaces dans une variable.
 espacesNom = ""
 for i in range(0, nbEspacesNom):
   espacesNom = espacesNom + " "
@@ -63,7 +69,7 @@ for i in range(0, nbEspacesNom):
 
 # Affichage du gâteau de fête.
 print("")
-print("Voici donc à quoi ressemblait ton dernier gâteau de fête!")
+print("Voici donc à quoi ressemblait ton dernier gâteau de fête, vu de côté!")
 print("")
 print (bougies)
 print ("-" + dessus + "-")
