@@ -71,6 +71,8 @@ def afficheRapport(nombres):
 # et le résultat est retourné dans la variable "grandNombre"
 grandNombre = plusGrand([10,21,45,176,123,47,96,101])
 print ("")
+# Puisque la variable "grandNombre" est un nombre entier, il faut la convertir 
+# en chaine de caractères (str) pour pouvoir la concaténer (+) avec le reste du texte à afficher.
 print ("1. Le plus grand nombre est: " + str(grandNombre))
 
 
